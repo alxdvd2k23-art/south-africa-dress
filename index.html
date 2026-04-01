@@ -996,4 +996,27 @@ function showToast(msg){const t=document.getElementById('toast');t.textContent=m
 renderProducts();updateCartUI();updateSocialLinks();
 </script>
 </body>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDM_82rrXfaECkedMz-twdcLqTOMDlqz30",
+    authDomain: "south-africa-dress.firebaseapp.com",
+    projectId: "south-africa-dress",
+    storageBucket: "south-africa-dress.firebasestorage.app",
+    messagingSenderId: "78294424797",
+    appId: "1:78294424797:web:b0f24262917b5032988f34",
+    measurementId: "G-BNSTR1YHVZ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </html>
